@@ -47,13 +47,22 @@ class Solution:
                 nums2.append(num)
         return nums2
 
+    def remove_duplicates1(self, nums):
+        return list(set(nums))
 if __name__ == "__main__":
 
     solution1 = Solution()
     input_list = [[1,1,2],[0,0,1,1,1,2,2,3,3,4]]
+    # for index, inpt in enumerate(input_list):
+    #     res_list = solution1.remove_duplicates(inpt)
+    #     print("+"*100)
+    #     print(f"\t\t\t Example-{index+1}\n")
+    #     print(f"{inpt=}")
+    #     print(f"{res_list=}\n\n")
     for index, inpt in enumerate(input_list):
-        res_list = solution1.remove_duplicates(inpt)
+        res_list = solution1.remove_duplicates1(inpt)
         print("+"*100)
         print(f"\t\t\t Example-{index+1}\n")
         print(f"{inpt=}")
-        print(f"{res_list=}\n\n")
+        print(f"{res_list=}")
+        print(f"{len(res_list)}\n\n")
