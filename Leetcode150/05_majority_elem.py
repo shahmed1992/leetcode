@@ -29,3 +29,5 @@ def majority_element( nums):
     return maj_elem
 
 print(majority_element(nums = [2,2,1,1,1,2,2]))
+
+# resource: https://algo.monster/liteproblems/169
